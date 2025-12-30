@@ -1,0 +1,2072 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue:wght@100;200;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Belgrano&family=Nunito+Sans:opsz,wght@6..12,700&family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+
+/* ===== Variables ===== */
+:root {
+  /* Font Families */
+  --font-primary: 'Poppins', sans-serif;
+  --font-display: 'Bebas Neue', cursive;
+  --font-serif: 'Playfair Display', serif;
+  --font-serif-alt: 'Merriweather', serif;
+  --font-oswald: 'Oswald', sans-serif;
+  --font-quattro: 'Quattrocento', serif;
+
+  /* Font Presets (shorthands) */
+  --text-bl: 500 18px/1.8 var(--font-primary);
+  --text-body: 400 16px/1.6 var(--font-primary);
+  --text-small: 400 14px/1.4 var(--font-primary);
+  --text-xs: 400 12px/1.2 var(--font-primary);
+
+  --heading-xl: 700 68px/1.1 var(--font-serif-alt);
+  --heading-lg: 700 54px/1.1 var(--font-primary);
+  --heading-md: 500 40px/1.2 var(--font-primary);
+
+  --label-text: 500 14px/1.2 var(--font-primary);
+
+  /* Colors */
+  --white: #ffffff;
+  --black: #000000;
+
+  --gray-900: #2B2D38;
+  --gray-800: #403C39;
+  --gray-700: #424241;
+  --gray-600: #949494;
+  --gray-500: #909090;
+
+  --pink: #DB2A6B;
+  --orange: #F38160;
+  --navy: #264065;
+  --red: #FA504D;
+}
+
+/* ===== Resets ===== */
+* { 
+  box-sizing: border-box; 
+}
+body { 
+  margin: 0; 
+}
+a { 
+  text-decoration: none; 
+}
+ul { 
+  list-style: none; 
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+button {
+  font-family: inherit;
+}
+
+/* ===== Global styles ===== */
+header {
+  padding: 32px 16px;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a{
+  text-decoration: none;
+}
+
+figure{
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== Index (listado de headers) Styles ===== */
+.list__headers{
+  background-image: linear-gradient(to left, #7EDAD2 0%, #f1cdf6 100%);
+}
+
+main.index {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 16px;
+  padding: 16px;
+}
+
+main.index article {
+  background-color: var(--white);
+  max-width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: #c7c4c4 1px solid;
+  text-align: center;
+  border-radius: 8px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+main.index article:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+main.index article a {
+  display: block;
+  color: inherit;
+}
+
+main.index img{
+  max-width: 80%;
+}
+
+/* ===== Header 01 – Business Agency ===== */
+.businessAgency .page{
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+  background-image: url(/src/img/header-01/hero@2x.png);
+  background-position: top right;
+  background-size: 61%;
+  background-repeat: no-repeat;
+}
+
+.businessAgency .page header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.businessAgency header img{
+  width: 170px;
+  height: auto;
+}
+
+.businessAgency header figcaption{
+  display: none;
+}
+
+.businessAgency header nav ul{
+  display: flex;
+  gap: 56px;
+}
+
+.businessAgency header nav li a{
+  text-decoration: none;
+  color: var(--gray-700);
+  font: var(--text-body);
+}
+
+.businessAgency .hero__content{
+  max-width: 48%;
+}
+
+.businessAgency .hero h1{
+  font-family: var(--font-display);
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100px;
+  color: var(--gray-700);
+  margin: 0;
+  font-size: 100px;
+  padding-top: 50px;
+}
+
+.businessAgency .hero h1 span{
+  color: #7EDAD2;
+}
+
+.businessAgency .hero p{
+  font-family: var( --font-primary);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  color: var(--gray-500);
+  max-width: 80%;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.businessAgency .hero__content a{
+  display: inline-block;
+  background-color: #7EDAD2;
+  border: none;
+  padding: 16px 34px;
+  font: var(--text-body);
+  color: var(--white);
+  text-decoration: none;
+  margin-bottom: 30px;
+}
+
+.businessAgency .hero__numbers{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 120px;
+  max-width: 36%;
+  margin: 0;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.businessAgency .hero__number h2{
+  font-family: var(--font-display);
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 400;
+  color: var(--gray-700);
+  margin: 0;
+}
+
+.businessAgency .hero__number span{
+  font: var(--text-small);
+  color: var(--gray-500);
+}
+
+.businessAgency .categories{
+  display: flex;
+  justify-content: space-between;
+  margin:0;
+  max-width: 94%;
+}
+
+.businessAgency .categories div{
+  background-color: var(--white);
+  margin: 20px;
+  padding: 32px 44px 32px 32px;
+}
+
+.businessAgency .categories div h3{
+  color: var(--gray-700);
+}
+
+.businessAgency .categories div p{
+  color: var(--gray-500);
+}
+
+
+/* ===== Header 02 – Creative Company ===== */
+.creativeCompany{
+  margin: 0;
+  background-color: #515DEF;
+  background-image: url(/src/img/header-02/MaskGroup.png);
+  background-position: top right;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-left: 100px;
+}
+
+.creativeCompany header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 0;
+}
+
+.creativeCompany header img{
+  max-width: 100px;
+  height: auto;
+}
+
+.creativeCompany header figcaption{
+  display: none;
+}
+
+.creativeCompany header nav{
+  display: flex;
+  gap: 40px;
+  font: var(--text-small);
+  width: 100%;
+  padding-left: 75px;
+}
+
+.creativeCompany header nav ul{
+  display: flex;
+}
+
+.creativeCompany header nav li{
+  display: flex;
+  align-items: center;
+  margin: 0;  
+}
+
+.creativeCompany header nav a{
+  padding: 0 30px;
+  color: white;
+}
+
+.creativeCompany nav .button{
+  background-color: #515DEF;
+  display: flex;
+  padding: 12px 16px;
+  margin-left: 400px;
+}
+
+.creativeCompany .hero{
+  display: flex;
+  align-items: center;
+  width: 48%;
+  padding-top: 20px;
+  font-family: var( --font-primary);
+  color: white;
+  font-size: 18px;
+  font-weight: 200;
+}
+
+.creativeCompany .hero__content h1{
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 60px;
+  margin: 10px 0;
+}
+
+.creativeCompany .hero__content .button{
+  padding-left: 0;
+}
+
+.creativeCompany .hero__content .button a{
+  width: 30%;
+  background-color: var(--white);
+  color: var(--black);
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 16px;
+  margin-bottom: 40px;
+}
+
+.creativeCompany .categories{
+  display: flex;
+  margin:0;
+  max-width: 65%;
+  padding: 50px 0;
+  background-color: #FBFBFB;
+  position: relative;
+  left: -100px;
+  padding: 32px 50px 32px 70px;
+}
+
+.creativeCompany .categories div{
+  max-width: 30%;
+  margin-right: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.creativeCompany .categories img{
+  max-width: 40px;
+}
+
+.creativeCompany .categories h3{
+  font-family: var( --font-primary);
+  font-size: 12px;
+  color: var(--black);
+  font-weight: 700;
+}
+
+.creativeCompany .categories p{
+  font:var(--text-xs);
+  color: gray;
+  font-weight: 400;
+}
+
+/* ===== Header 03 – Coworking Space ===== */
+.coworkingSpace{
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+  background-image: url(/src/img/header-03/ellipse.svg);
+  background-size: 200px;
+  background-position: left top 100px;
+  background-repeat: no-repeat;
+}
+
+.coworkingSpace header{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.coworkingSpace header img{
+  max-width: 140px;
+  height: auto;
+  margin-right: 100px;
+}
+
+.coworkingSpace header figcaption{
+  display: none;
+}
+
+.coworkingSpace header nav ul{
+  display: flex; 
+  gap: 32px;
+}  
+  
+.coworkingSpace header a{
+  padding: 14px;
+  font: var(--text-small);
+  color: var(--black);
+}
+
+.coworkingSpace header span img{
+  max-width: 28px;
+  height: auto;
+  margin: 0;
+  padding-left: 100px;
+}
+
+.coworkingSpace header .signUp{
+  background-color: #9B9A78;
+  color: var(--white);
+  padding: 14px 24px;
+}
+
+.coworkingSpace header .signIn{
+  color: #9B9A78;
+  padding: 14px 24px;
+  font-family: 'Nunito Sans', sans-serif;
+  text-decoration: underline;
+}
+
+.coworkingSpace .hero {
+  position: relative;
+  margin-top: 40px;
+}
+
+.coworkingSpace .hero__img img {
+  width: 60%;
+  height: auto;
+  display: block;
+}
+
+.coworkingSpace .hero__overlay {
+  position: absolute;
+  top: 40%;
+  right: 0;
+  transform: translateY(-40%);
+  width: 50%;
+  padding: 50px 0 50px 50px;
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+.coworkingSpace .hero__content{
+  max-width: 500px;
+}
+
+.coworkingSpace .hero__content span{
+  display: flex;
+  align-items: flex-start;
+}
+
+.coworkingSpace .hero__content img{
+  padding-top: 30px;
+}
+
+.coworkingSpace .hero__content h1{
+  font-family: 'Fairplay Display', serif;
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 60px;
+  color: var(--black);
+  margin: 0;
+}
+
+.coworkingSpace .hero__content p{
+  font: var(--text-bl);
+  color: var(--gray-500);
+}
+
+.coworkingSpace .hero__checklist {
+  position: absolute;
+  right: 0;
+  top: 65%;
+  width: 30%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  color: var(--gray-500);
+  margin-top: 70px;
+  margin-left: 70px;
+}
+
+.coworkingSpace .hero__check {
+  display: flex;
+  align-items: center;
+  font:var(--text-xs);
+  font-weight: 800;
+}
+
+.coworkingSpace .hero__check img {
+  max-width: 16px;
+  height: auto;
+  margin-right: 8px;
+}
+
+.coworkingSpace .items{
+  display: flex;
+  justify-content: space-between;
+  margin:0;
+  max-width: 100%;
+  padding: 50px;
+}
+
+.coworkingSpace .items article{
+  max-width: 260px;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-primary);
+}
+
+.coworkingSpace .items img{
+  max-width: 60px;
+  margin-bottom: 16px;
+}
+
+.coworkingSpace .items h3{
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--black);
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+.coworkingSpace .items p{
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--gray-500);
+  margin: 0;
+}
+
+/* ===== Header 04 – NFT Marketplace ===== */
+.nftMarketplace{
+  margin-left: 100px;
+  padding-left: 0;
+  margin-right: 0;
+}
+
+.nftMarketplace header{
+  display: flex;
+  justify-content: space-between;   
+  align-items: left;
+  padding: 20px 0;
+  position: relative;
+  z-index: 10;
+}
+
+.nftMarketplace header img{
+  max-width: 140px;
+  height: auto;
+  margin-right: 100px;
+}
+
+.nftMarketplace header figcaption{
+  display: none;
+}
+
+.nftMarketplace header nav{
+  display: flex;
+  align-items: center;
+  padding-right: 300px;
+}
+
+.nftMarketplace header nav ul{
+  display: flex; 
+  gap: 32px;
+}    
+
+.nftMarketplace header a{
+  padding: 14px;
+  font: var(--text-small);
+  color: #2E2F38;
+}
+
+.nftMarketplace header span img{
+  max-width: 28px;
+  height: auto; 
+  margin: 0;
+  padding-left: 100px;
+}
+
+.nftMarketplace header .sign{
+  position: relative;
+  right: 100px;
+}
+
+.nftMarketplace header .signUp{
+  background-color: var(--red);
+  color: white;
+  padding: 8px 28px;
+}
+
+.nftMarketplace header .signIn{
+  color: white;
+  padding: 8px 28px;
+}
+
+.nftMarketplace .hero {
+  display: flex; 
+  padding: 0;
+  min-height: 100vh;
+}
+
+.nftMarketplace .hero__left {
+  flex: 1.1; 
+  background-color: white;
+}
+
+.nftMarketplace .hero__right {
+  flex: 0.9; 
+  background-color: #2E2F38;
+  padding: 0px;
+  position: relative; 
+  top: -80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.nftMarketplace .hero-brand {
+  position: absolute;
+  right: -210px;
+  top: 50%;
+  transform: translateY(-50%) rotate(-270deg);
+  font-family: 'Belgrano', serif;
+  font-size: 180px;
+  color: rgba(255, 255, 255, 0.04);
+  pointer-events: none;
+}
+
+.nftMarketplace .hero__content{
+  max-width: 700px;
+  color: #2E2F38;
+  padding-top: 100px;
+}
+
+.nftMarketplace .hero__content h1{
+  font-family: 'belgrano', serif;
+  font-size: 55px;
+  font-weight: 400;
+  line-height: 60px;
+  color: #2E2F38;
+  margin: 0;
+}
+
+.nftMarketplace .highlight {
+  position: relative;
+  display: inline-block;
+}
+
+.nftMarketplace .highlight img {
+  position: absolute;
+  bottom: -6px;
+  left: -16px;
+  width: 120%;
+  z-index: 1;
+}
+
+.nftMarketplace .hero__content p{
+  font: var(--text-bl);
+  color: var(--gray-500);
+  margin:0;
+  padding: 10px;
+}
+
+.nftMarketplace .hero__content .buttons{
+  display: flex;
+  align-items: center;
+}
+
+.nftMarketplace .hero__content .button{
+  background-color: var(--red);
+  color: white;
+  padding: 8px 60px;
+  font: var(--text-small);  
+}
+
+.nftMarketplace .hero__content .more{
+  padding: 8px 20px;
+  font: var(--text-small); 
+  color: #2E2F38;
+  text-decoration: underline;
+  display: flex;
+  align-items: center;
+}
+
+.nftMarketplace .hero__content .more img{
+  padding: 8px 10px;
+}
+
+.nftMarketplace .hero__featured{
+  padding-top: 10px;
+  margin: 0;
+}
+
+.nftMarketplace .featured__grid{
+  display: flex;
+  max-width: 900px;
+}
+
+.nftMarketplace .hero__featured h2{
+  font-family: 'belgrano', serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: #2E2F38;
+  margin: 0;
+  padding: 10px 0;
+}
+
+.nftMarketplace .featured__grid img{
+  max-width: 400px;
+  position: relative;
+  left: -40px;
+}
+
+.nftMarketplace .artwork-container {
+  position: relative; 
+  width: 100%;
+  max-width: 400px;
+}
+
+.nftMarketplace .main-img {
+  width: 100%;
+  border-radius: 200px 200px 0 0; 
+  position: absolute; 
+  top: -260px
+}
+
+.nftMarketplace .artwork-card {
+  position: absolute; 
+  top: 100px; 
+  left: 50%;
+  transform: translateX(-50%); 
+  background: white;
+  width: 90%;
+  padding: 20px;
+  color: #2E2F38;
+}
+
+.nftMarketplace .user-info {
+  display: flex;
+  align-items: center;
+}
+
+.nftMarketplace .user-text, .nftMarketplace .bid-info{
+  display: inline-block;
+  justify-content: space-between;
+  padding: 10px
+}
+
+.nftMarketplace .bid-info{
+  padding-right: 0;
+}
+
+.nftMarketplace .user-info .username, .nftMarketplace .user-info .bid-label{
+  margin-left: 10px;
+  font: var(--text-small);  
+  color: #8E8E8E;
+  margin: 0;
+}
+
+.nftMarketplace .artwork-card .art-title , .nftMarketplace .user-info .bid-value{
+  font-family: var(--font-primary);
+  font-size: 20px;  
+  font-weight: 600;
+}
+
+.nftMarketplace .artwork-container .line{
+  width: 100%;
+  height: 1px;
+  background-color: #2E2F38;
+  margin: 10px 0;
+}
+
+.nftMarketplace .artwork-container .action-row{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nftMarketplace .artwork-card .btn-bid{
+  font: var(--text-small);
+  font-weight: 600;
+  color: white;
+  background-color: var(--red);
+  margin: 0;
+  border: none;
+  padding: 8px 50px;
+}
+
+.nftMarketplace .artwork-card .btn-view{
+  font: var(--text-small); 
+  font-weight: 600;
+  color: var(--red);
+  background-color: white;
+  margin: 0;
+  border: none;
+  padding: 8px 50px;
+}
+
+.nftMarketplace .artwork-container .stats{
+  position: absolute;
+  top: 300px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+
+.nftMarketplace .artwork-container .stats div{  
+  font:var(--text-xs);
+  color: white;
+  padding: 0 0 0 40px;
+}
+
+.nftMarketplace .artwork-container .stats div span{
+  font-size: 24px;    
+  color: var(--red);
+  font-weight: 600;
+}
+
+.nftMarketplace .artwork-container .stats div:first-child{
+  padding-left: 0;
+}
+
+/* ===== Header 05 – Grocery Store ===== */
+.groceryStore{
+  margin: 0 100px;
+  padding-left: 0;
+}
+
+.groceryStore header{
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+}
+
+.groceryStore header img{
+  max-width: 140px;
+  height: auto;
+  padding-right: 100px;
+}
+
+.groceryStore header figcaption{
+  display: none;
+}
+
+.groceryStore header nav{
+  display: flex;
+  align-items: center;
+  padding-right: 100px;
+}
+
+.groceryStore header nav ul{
+  display: flex; 
+  gap: 32px;
+} 
+  
+.groceryStore header a{
+  padding: 14px;
+  font: var(--text-small);
+  color: var(--gray-800);
+}
+
+.groceryStore header a:hover{
+  color: var(--orange);
+  text-decoration: underline;
+}
+
+.groceryStore header .bag{
+  max-width: 24px;
+  height: auto; 
+  margin: 0;
+  padding: 0;
+  position: relative;
+  display: inline-block;
+}
+
+.groceryStore header .bag__badge {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  width: 10px;
+  height: 10px;
+  background-color: var(--orange);
+  border-radius: 50%;
+}
+
+.groceryStore header .signIn{
+  color: var(--orange);
+  padding: 8px 28px;
+}
+
+.groceryStore header .signUp{
+  background-color: var(--orange);
+  color: white;
+  padding: 8px 28px;
+  border-radius: 8px;
+}
+
+.groceryStore .hero {
+  display: flex; 
+  padding: 0;
+  position: relative;
+}
+
+.groceryStore .hero__content{
+  max-width: 50%;
+  color: var(--gray-800);
+  padding: 80px 0 0 0;
+}
+
+.groceryStore .hero__content h1{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 60px;
+  color: var(--gray-800);
+  margin: 0;
+}
+
+.groceryStore .hero__content h1 span{
+  color: var(--orange);
+}
+
+.groceryStore .hero__content p{
+  max-width: 80%;
+  font-family: var(--font-primary);
+  font-size: 20px;
+  color: var(--gray-600);
+  margin:0;
+  padding: 20px 0;
+}
+
+.groceryStore .hero__image {
+  position: relative;
+}
+
+.groceryStore .hero__image img{
+  max-width: 750px;
+  height: auto;
+  position: absolute;
+  transform: translateX(-40%);
+  top: -50px;
+}
+
+.groceryStore .hero__search{
+  display: flex;
+  align-items: center;
+  position: relative;
+  max-width: 60%;
+}
+
+.groceryStore .hero__search span {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateX(400%);
+}
+
+.groceryStore .hero__search .search{
+  width: 100%;
+  background-color: rgba(208, 208, 210, 0.25);
+  padding: 20px;
+  border-radius: 8px;
+  font: var(--text-small);
+  color: var(--gray-600);
+  border: none;
+}
+
+.groceryStore .hero__search span{
+  position: absolute;
+  right: 200px;
+  top: 0;
+  font: var(--text-small); 
+  border: none;
+  border-radius: 8px;
+}
+
+.groceryStore .hero__checklist{
+  max-width: 60%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-top: 20px;
+}
+
+.groceryStore .hero__check{
+  display: flex;
+  align-items: center;
+}
+
+.groceryStore .hero__check h4{
+  font:var(--text-xs);
+  line-height: 0px;
+  color: var(--gray-600);
+}
+
+.groceryStore .hero__check img {
+  max-width: 16px;
+  height: auto;
+  margin-right: 8px;
+}
+
+.groceryStore .categories{
+  display: flex;
+  justify-content: space-between;
+  margin:0;
+  max-width: 100%;
+  padding: 0;
+}
+
+.groceryStore .categories div{
+  max-width: 18%;
+  background-color: var(--white);
+  margin: 0 10px;
+  padding: 32px 24px;
+}
+
+.groceryStore .categories img{
+  max-width: 80px;
+}
+
+.groceryStore .categories h3{
+  font: var(--text-body);
+  font-weight: 500;
+  color: var(--gray-800);
+  margin: 0;
+  padding: 10px 0 5px 0;
+}
+
+.groceryStore .categories p{
+  font:var(--text-xs);
+  color: var(--gray-500);
+  margin: 0;
+}
+
+/* ===== Header 06 – Spa ===== */
+.spa {
+  background-image: linear-gradient(to right, #FAF8F5 0%, #FAF8F5 65%, #A9D6CB 65%, #A9D6CB 100%);
+  padding-left: 100px;
+}
+
+.spa header{
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+}
+
+.spa header img{
+  max-width: 140px;
+  height: auto;
+}
+
+.spa header figcaption{
+  display: none;
+}
+
+.spa header nav{
+  display: flex;
+  align-items: center;
+  padding: 0 70px;
+}
+
+.spa header nav ul{
+  display: flex; 
+  gap: 28px;
+}
+
+.spa header a{
+  padding: 0 14px;
+  font: var(--text-small);
+  color: var(--navy);
+}
+
+.spa header .bag{
+  max-width: 24px;
+  height: auto; 
+  margin: 0;
+  padding: 0;
+}
+
+.spa header .signIn{
+  color: var(--navy);
+  padding: 8px 28px;
+  text-decoration: underline;
+}
+
+.spa header .signUp{
+  background-color: var(--navy);
+  color: white;
+  padding: 14px 30px;
+  border-radius: 24px;
+  margin-right: 100px;
+}
+
+.spa nav ul .more > a::after {
+  content: "url(img/header-06/arrow-down.svg)";
+  font-size: 0.7em;
+}
+
+.spa .hero{
+  max-width: 44%;
+  position: relative;
+}
+
+.spa .hero .hero__text h1{
+  font-family: var(--font-primary);
+  font-size: 54px;
+  font-weight: 700;
+  line-height: normal;
+  color: var(--navy);
+  margin-top: 45px;
+  margin-bottom: 0;
+}
+
+.spa .hero__text p{
+  font: var(--text-bl);
+  color: var(--gray-500);
+  margin:0;
+  padding: 10px 0;
+}
+
+.spa .hero__image{
+    position: absolute;
+  left: 320px;
+  top: -120px;
+}
+
+.spa .hero__image img{
+  max-width: 1000px;
+  height: auto;
+}
+
+.spa .hero .buttons{
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.spa .hero .buttons .book{
+  background-color: var(--navy);
+  color: white;
+  padding: 14px 40px;
+  border-radius: 24px;
+  border: none;
+}
+
+.spa .hero .buttons span {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 80px;
+}
+
+.spa .hero .buttons .play{
+  background-color: white;
+  border-radius: 24px;
+  width:24px;
+  height: 24px; 
+  padding: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,.1);
+}
+
+.spa .hero .buttons .watch{
+  font: var(--text-small);
+  color: var(--navy);
+  padding: 0 20px;
+}
+
+.spa .hero .details{
+  width: 450px;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  padding: 20px 32px;
+  position: absolute;
+  top: 350px;
+  left: 50px;
+}
+
+.spa .hero .details div{
+  text-align: center;
+}
+
+.spa .hero .details div:nth-child(2){
+  padding: 0 54px;
+}
+
+.spa .hero .details div img{
+  max-width: 50px;
+}
+
+.spa .hero .details div h3{
+  font-family: var(--font-primary);
+  font-size: 28px;
+  font-weight: 500;
+  color: var(--navy);
+  margin: 0;
+  padding: 10px 0 5px 0;
+}
+
+.spa .hero .details div p{
+  font: var(--text-small);
+  color: var(--gray-500);
+  margin: 0;
+}
+
+.spa .hero .hero__cards{
+  position: relative;
+}
+
+.spa .hero__cards .card1, .spa .hero__cards .card2{
+  background-color: rgba(255, 255, 255, 0.55);
+  border-radius: 10px;
+  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  position: absolute;
+  width: 42%;
+}
+
+.spa .hero .card1{
+  left: 1050px;
+  top: -150px;
+}
+
+.spa .hero .card2{
+  left: 950px;
+  top: 70px;
+}
+
+.spa .hero__cards blockquote{
+  font: var(--text-small);
+  color: var(--black);
+  margin: 0;
+}
+
+.spa .hero__cards cite{
+  font: var(--text-small);
+  font-weight: bold;
+  font-style: normal;
+  color: var(--navy);
+}
+
+/* ===== Header 07 – Architecture ===== */
+.architecture{
+  background-image: linear-gradient(to right, white 0%, white 50%, #DEDAD5 50%, #DEDAD5 100%);
+  padding-left: 100px;
+  position: relative;
+}
+
+.architecture .rectanguleTop{
+  background-color: #DEDAD5;
+  width: 230px;
+  height: 65px;
+  position: absolute;
+  z-index: -1;
+  top: 22%;
+  left: 5%;
+}
+
+.architecture .rectanguleBottom{
+  background-color: #DEDAD5;
+  width: 280px;
+  height: 90px;
+  position: absolute;
+  z-index: -1;
+  bottom: 0%;
+  left: 32%;
+}
+
+.architecture header{
+  display: flex;
+  align-items: center;
+}
+
+.architecture header img{
+  max-width: 140px;
+  height: auto;
+}
+
+.architecture header figcaption{
+  display: none;
+}
+
+.architecture header nav{
+  display: flex;
+  align-items: center;
+  padding: 0 70px;
+  padding-left: 15%;
+}
+
+.architecture header nav ul{
+  display: flex; 
+  gap: 28px;
+}
+
+.architecture header a{
+  padding: 0 14px;
+  font: var(--text-small);
+  color: var(--gray-700);
+}
+
+.architecture .hero{
+  position: relative;
+}
+
+.architecture .hero__images .image1, .architecture .hero__images .image2{
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  top: -5%;
+}
+
+.architecture .hero__content, .architecture .hero__services, .architecture .hero__stats {
+  position: relative;
+  z-index: 1;
+}
+
+.architecture .hero__images .image1{
+  left: 34%;
+}
+
+.architecture .hero__images .image2{
+  left: 62%;
+}
+
+.architecture .hero__images img{
+  max-width: 340px;
+}
+
+.architecture .hero__content{
+  max-width: 50%;
+}
+
+.architecture .hero__content h1{
+  font-family: var(--font-serif);
+  font-size: 60px;
+  font-weight: 400;
+  color: var(--gray-700);
+  margin-top: 50px;
+}
+
+.architecture .hero__content p{
+  font: var(--text-bl);
+  color: var(--gray-700);
+  max-width: 80%;
+  margin-top: 30px;
+}
+
+.architecture .buttons{
+  max-width: 35%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 100px;
+}
+
+.architecture .buttons .button{
+  max-width: 45%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  
+  background-color: var(--gray-700);
+  padding: 8px 15px;
+}
+
+.architecture .buttons .start{
+  color: #FAF8F5;
+}
+
+.architecture .buttons .arrow{
+  max-width: 16px;
+}
+
+.architecture .buttons .more{
+  font: var(--text-small);
+  color: var(--gray-700);
+}
+
+.architecture .hero__stats{
+  display: flex;
+  justify-content: space-between;
+  align-items: top;
+  max-width: 35%;
+  padding-top: 10px;
+}
+
+.architecture .hero__stats div{
+  max-width: 50px;
+}
+
+.architecture .hero__stats h3{
+  font-family: var(--font-primary);
+  font-size: 40px;
+  font-weight: 500;
+  color: var(--gray-700);
+  margin: 0;
+}
+
+.architecture .hero__stats p{
+  font: var(--label-text);
+  color: #9E9D9B;
+}
+
+.architecture .hero__services{
+  width: 18%;
+  position: absolute;
+  top: 60%;
+  left: 64%;
+  background-color: #FAF8F5;
+  padding: 18px;
+}
+
+.architecture .hero__services h4{
+  font: var(--text-small);
+  color: var(--gray-700);
+  margin: 0;
+}
+
+.architecture .hero__services ol{
+  margin: 0;
+  list-style: none;      
+  counter-reset: mi-item; 
+}
+
+.architecture .hero__services li{
+  counter-increment: mi-item; 
+  display: list-item; 
+  padding: 10px 0;
+  border-bottom: 1px solid #DEDAD5; 
+}
+
+.architecture .hero__services ol li:last-child {
+  border-bottom: none;
+}
+
+.architecture .hero__services ol li::marker{
+  content: counter(mi-item, decimal-leading-zero) "       ";
+  font: var(--text-small);
+  color: #9E9D9B;
+}
+
+.architecture .hero__services ol li span{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.architecture .hero__services ol li a{
+  font: var(--text-bl);
+  color: var(--gray-700);
+}
+
+.architecture .hero__services ol li img{
+  max-width: 30px;
+}
+
+/* ===== Header 08 – Portfolio ===== */
+.portfolio {
+  background-color: #F4F3F8;
+  padding-left: 100px;
+  position: relative;
+}
+
+.portfolio header{
+  display: flex;
+  align-items: center;
+}
+
+.portfolio header img{
+  max-width: 140px;
+  height: auto;
+}
+
+.portfolio header figcaption{
+  display: none;
+}
+
+.portfolio header nav{
+  display: flex;
+  align-items: center;
+  padding-left: 25%;
+}
+
+.portfolio header nav ul{
+  display: flex; 
+  gap: 28px;
+}
+
+.portfolio header a{
+  padding: 0 14px;
+  font: var(--text-small);
+  color: #333333;
+}
+
+.portfolio .hero{
+  position: relative;
+}
+
+.portfolio .hero .hero__images{
+  position: relative;
+}
+
+.portfolio .hero .hero__images .woman img{
+  max-width: 75%;
+}
+
+.portfolio .hero .hero__images .vector-blue img{
+  max-width: 75%;
+}
+
+.portfolio .hero__images .woman{
+  position: absolute;
+  z-index: 1;
+  transform: translateY(140px);
+  bottom: 5px;
+  left: 50%;
+}
+
+.portfolio .hero__images .vector-blue{
+  position: absolute;
+  z-index: 0;
+  transform: translateY(140px);
+  bottom: 5px;
+  left: 54%;
+}
+
+.portfolio .hero__content, .portfolio .hero__stats, .portfolio .hero__service {
+  position: relative;
+  z-index: 10;
+}
+
+.portfolio .hero__images .rectangule-left img,
+.portfolio .hero__images .rectangule-right img{
+  max-width: 75%;
+}
+
+.portfolio .hero__images .rectangule-left{
+  position: absolute;
+  z-index: 2;
+  left: 48%;
+  bottom: -45px;
+}
+
+.portfolio .hero__images .rectangule-right{
+  position: absolute;
+  z-index: 2;
+  left: 80%;
+  bottom: 200px;
+  transform: rotate(90deg);
+}
+
+.portfolio .hero__content .hero__text{
+  max-width: 45%;
+  margin-top: 70px;
+}
+
+.portfolio .hero__text .greeting{
+  font: var(--text-bl);
+  font-weight: 500;
+  color: #333333;
+}
+
+.portfolio .hero .hero__text{
+  margin-top: 40px;
+}
+
+.portfolio .hero__content h1{
+  font-family: var(--font-display);
+  font-size: 90px;
+  line-height: 90px;
+  font-weight: 400;
+  color: #333333;
+  margin: 0;
+}
+
+.portfolio .hero__content h1 span{
+  color: #DC0155;
+}
+
+.portfolio .hero__content p{
+  font: var(--text-bl);
+  color: #333333;
+  margin-top: 20px;
+}
+
+.portfolio .hero__content .button{
+  padding-top: 32px;
+}
+
+.portfolio .button a{
+  background-color: #DC0155;
+  color: #F4F3F8;
+  padding: 12px 28px;
+  border-radius: 30px;
+}
+
+.portfolio .hero__images .stats{
+  position: relative;
+}
+
+.portfolio .hero__images .card{
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 20px;
+  max-width: fit-content;
+  padding: 10px;
+}
+
+.portfolio .hero__images .card img{
+  margin: 0;
+  max-width: 50px;
+  padding-right: 20px;
+}
+
+.portfolio .hero__images .card h4{
+  font: var(--text-bl);
+  color: #333333;
+  margin: 0;
+}
+
+.portfolio .hero__images .card p{
+  font: var(--text-small);
+  color: var(--gray-500);
+  margin: 0;
+}
+
+.portfolio .hero__images .card:first-child{
+  position: absolute;
+  z-index: 2;
+  left: 46%;
+  bottom: 160px;
+}
+
+.portfolio .hero__images .card:nth-child(2){
+  position: absolute;
+  z-index: 2;
+  left: 75%;
+  top: 60px;
+}
+
+.portfolio .hero__images .card:last-child{
+  position: absolute;
+  z-index: 2;
+  left: 85%;
+  bottom: 120px;
+}
+
+.portfolio .hero__service{
+  padding-top: 50px;
+}
+
+.portfolio .hero__service .service{
+  display: flex;
+  max-width: 70%;
+  align-items: center;
+}
+
+.portfolio .hero__service .card-service{
+  padding-right: 80px;
+}
+
+.portfolio .hero__service img{
+  max-width: 40px;
+}
+
+.portfolio .hero__service h3{
+  font: var(--text-bl);
+  color: #333333;
+}
+
+.portfolio .hero__service p{
+  font: var(--text-small);
+  color: var(--gray-500);
+}
+
+.portfolio .hero__service h2{
+  font-family: var(--font-display);
+  font-size: 40px;
+  font-weight: 400;
+  color: #333333;
+}
+
+/* ===== Header 09 – Portfolio 2 ===== */
+.portfolio2 {
+  background-image: url(/src/img/header-09/background.svg);
+  padding: 0 100px;
+  position: relative;
+}
+
+.portfolio2 header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.portfolio2 header nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.portfolio2 header nav ul{
+  display: flex; 
+  gap: 28px;
+}
+
+.portfolio2 header a{
+  padding: 0 14px;
+  font-family: var(--font-quattro);
+  font-size: 14px;
+  font-weight: 400;
+  color: #303030;
+}
+
+.portfolio2 header img{
+  max-width: 140px;
+  height: auto;
+  padding-right: 280px;
+}
+
+.portfolio2 header figcaption{
+  display: none;
+}
+
+.portfolio2 header .social-icons{
+  display: flex; 
+  justify-content: end;
+  gap: 15px;
+}
+
+.portfolio2 header .social-icons img{
+  max-width: 16px;
+  padding: 0;
+}
+
+.portfolio2 .underline{
+  text-decoration-line: underline;
+  text-decoration-color: #CAC6BB;     
+  text-decoration-thickness: 3px;
+  text-underline-offset: 8px; 
+}
+
+.portfolio2 .hero{
+  display: flex;
+}
+
+.portfolio2 .hero__service{
+  max-width: 24%;
+  padding-top: 200px;
+}
+
+.portfolio2 .hero__service h2{
+  font-family: var(--font-oswald); 
+  font-size: 26px;
+  font-weight: 500;
+}
+
+.portfolio2 .hero__service .card-service .container{
+  display: flex;
+}
+
+.portfolio2 .hero__service .card-service h3{ 
+  font-family: var(--font-oswald);  
+  font-size: 14px;
+  font-weight: 500;
+  color: #303030;
+  padding-left: 10px;
+}
+
+.portfolio2 .hero__service .card-service p{
+  font-family: var(--font-quattro);
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--gray-500);
+}
+
+.portfolio2 .hero__service .card-service img{
+  max-width: 50px;
+}
+
+.portfolio2 .hero__service .card-service .image{
+  padding: 12px;
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 8px 24px rgba(0,0,0,0.08);
+}
+
+.portfolio2 .hero__natalie{
+  padding-left: 60px;
+}
+
+.portfolio2 .hero__natalie h1{
+  font-family: var(--font-oswald); 
+  font-size: 70px;
+  font-weight: 500;
+  color: #303030;
+  margin-bottom: 10px;
+}
+
+.portfolio2 .hero__natalie img{
+  max-width: 450px;
+  padding-left: 20px;
+}
+
+.portfolio2 .hero__content{
+  max-width: 24%;
+  padding-top: 200px;
+  padding-left: 70px;
+}
+
+.portfolio2 .hero__content h2{
+  font-family: var(--font-oswald); 
+  font-size: 25px;
+  font-weight: 500;
+  color: #303030;
+}
+
+.portfolio2 .hero__content p{
+  font-family: var(--font-quattro);
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--gray-500);
+  line-height: 1.5em;
+}
+
+.portfolio2 .hero__content .button{
+  margin: 40px 0;
+}
+
+.portfolio2 .hero__content .button a{
+  font-family: var(--font-quattro);
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--gray-500);
+  background-color: #303030;
+  padding: 10px 26px;
+}
+
+.portfolio2 .hero__stats{
+  display: flex;
+}
+
+.portfolio2 .hero__stats .card{
+  padding-right: 20px;
+}
+
+.portfolio2 .hero__stats h4{
+  font-family: var(--font-oswald); 
+  font-size: 22px;
+  font-weight: 500;
+  color: #303030;
+  margin: 0;
+}
+
+.portfolio2 .hero__stats p{
+  font-family: var(--font-quattro);
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--gray-500);
+}
+
+/* ===== Header 10 – Online Forum ===== */
+.forum {
+  background-color: #2B2D38;
+  color: var(--white);
+}
+
+.forum header{
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  padding: 20px 100px;
+}
+
+.forum header img{
+  max-width: 140px;
+  height: auto;
+}
+
+.forum header figcaption{
+  display: none;
+}
+
+.forum header nav{
+  display: flex;
+  align-items: center;
+  padding: 0 70px;
+}
+
+.forum header nav ul{
+  display: flex; 
+  gap: 28px;
+}
+
+.forum header a{
+  padding: 0 14px;
+  font: var(--label-text);
+  color: var(--gray-300);
+}
+
+.forum header a:hover{
+  color: var(--white);
+}
+
+.forum .underline{
+  text-decoration-line: underline;
+  text-decoration-color: var(--pink);   
+  text-decoration-thickness: 3px;
+  text-underline-offset: 8px; 
+}
+
+.forum .hero{
+  padding: 50px 100px;
+  display: flex;
+}
+
+.forum .hero__content{
+  max-width: 55%;
+}
+
+.forum .hero__text h1{
+  font: var(--heading-xl);
+  color: var(--white);
+  margin-bottom: 20px;
+}
+
+.forum .hero__text p {
+  font: var(--text-body);
+  color: rgba(255, 255, 255, 0.75);
+  max-width: 80%;
+}
+
+.forum .buttons .start{
+  font: var(--text-small);
+  color: var(--white);
+  background-color: var(--pink); 
+  padding: 10px 40px;
+  border-radius: 10px;
+}
+
+.forum .buttons{
+  display: flex;
+}
+
+.forum .buttons .button{
+  max-width: 45%;
+  display: flex;
+}
+
+.forum .buttons span{
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.forum .buttons .more{
+  font: var(--text-small);
+  color: var(--white);
+  text-decoration: underline;
+}
+
+.forum .hero__service{
+  display: flex;
+  padding-top: 100px;
+}
+
+.forum .hero__service .card-service{
+  display: flex;
+  max-width: 25%;
+  padding-right: 30px;
+  align-items: center;
+}
+
+.forum .hero__service img{
+  max-width: 40px;
+}
+
+.forum .hero__service h3{
+  font: var(--text-small);
+  color: var(--white);
+  padding-left: 10px;
+}
+
+.forum .hero__images{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  align-items: center;
+  max-width: 50%;
+  gap: 0 20px;
+  padding-left: 50px;
+}
+
+.forum .hero__images img{
+  max-width: 200px;
+  z-index: 1;
+}
+
+.forum .hero__images .boy-left{
+  grid-row: 1 / span 2;
+}
+
+.forum .hero__images .woman-center{
+  grid-row: 1 / span 1;
+}
+
+.forum .hero__images .woman-right{
+  grid-row: 1 / span 3;
+}
+
+.forum .hero__images .woman-left{
+  grid-row: 3 / span 1;
+}
+
+.forum .hero__images .boy-center{
+  grid-row: 2 / span 2;
+}
+
+.forum .hero__background{
+  position: relative;
+}
+
+.forum .hero__background{
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.forum .hero__background img:first-child{
+  position: absolute;
+  bottom: -250px;
+  left: 750px;
+}
+
+.forum .hero__background img:nth-child(2){
+  position: absolute;
+  bottom: -150px;
+  right: -150px;
+}
