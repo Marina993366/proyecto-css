@@ -69,7 +69,12 @@ button {
 
 /* ===== Global styles ===== */
 header {
-  padding: 40px 16px;
+  padding: 40px 0;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  max-width: 1400px; 
+  margin: 0;
 }
 
 header nav ul {
@@ -131,16 +136,10 @@ main.index img{
   margin-right: auto;
   padding-left: 16px;
   padding-right: 16px;
-  background-image: url(../src/img/header-01/hero@2x.png);
+  background-image: url(./img/header-01/hero@2x.png);
   background-position: top right;
   background-size: 61%;
   background-repeat: no-repeat;
-}
-
-.businessAgency .page header{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .businessAgency header img{
@@ -263,13 +262,6 @@ main.index img{
   padding-left: 100px;
 }
 
-.creativeCompany header{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-left: 0;
-}
-
 .creativeCompany header img{
   max-width: 100px;
   height: auto;
@@ -390,11 +382,6 @@ main.index img{
   background-size: 200px;
   background-position: left top 100px;
   background-repeat: no-repeat;
-}
-
-.coworkingSpace header{
-  display: flex;
-  justify-content: space-between;
 }
 
 .coworkingSpace header img{
@@ -554,9 +541,6 @@ main.index img{
 }
 
 .nftMarketplace header{
-  display: flex;
-  justify-content: space-between;   
-  align-items: left;
   position: relative;
   z-index: 10;
 }
@@ -845,12 +829,6 @@ main.index img{
   padding-left: 0;
 }
 
-.groceryStore header{
-  display: flex;
-  justify-content: space-between; 
-  align-items: center;
-}
-
 .groceryStore header img{
   max-width: 240px;
   height: auto;
@@ -1054,12 +1032,6 @@ main.index img{
 .spa {
   background-image: linear-gradient(to right, #FAF8F5 0%, #FAF8F5 65%, #A9D6CB 65%, #A9D6CB 100%);
   padding-left: 100px;
-}
-
-.spa header{
-  display: flex;
-  justify-content: space-between; 
-  align-items: center;
 }
 
 .spa header img{
@@ -1291,11 +1263,6 @@ main.index img{
   left: 32%;
 }
 
-.architecture header{
-  display: flex;
-  align-items: center;
-}
-
 .architecture header img{
   max-width: 140px;
   height: auto;
@@ -1484,11 +1451,6 @@ main.index img{
   background-color: #F4F3F8;
   padding-left: 100px;
   position: relative;
-}
-
-.portfolio header{
-  display: flex;
-  align-items: center;
 }
 
 .portfolio header img{
@@ -1713,13 +1675,6 @@ main.index img{
   position: relative;
 }
 
-.portfolio2 header{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 0;
-}
-
 .portfolio2 header nav{
   display: flex;
   align-items: center;
@@ -1739,10 +1694,12 @@ main.index img{
   color: #303030;
 }
 
-.portfolio2 header img{
+.portfolio2 header figure{
+  width: 30%;
+}
+.portfolio2 header .logo{
   max-width: 140px;
   height: auto;
-  padding-right: 280px;
 }
 
 .portfolio2 header figcaption{
@@ -1897,9 +1854,6 @@ main.index img{
 }
 
 .forum header{
-  display: flex;
-  justify-content: space-between; 
-  align-items: center;
   padding: 20px 100px;
 }
 
