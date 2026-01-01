@@ -131,7 +131,7 @@ main.index img{
   margin-right: auto;
   padding-left: 16px;
   padding-right: 16px;
-  background-image: url(/src/img/header-01/hero@2x.png);
+  background-image: url(../../src/img/header-01/hero@2x.png);
   background-position: top right;
   background-size: 61%;
   background-repeat: no-repeat;
@@ -256,7 +256,7 @@ main.index img{
 .creativeCompany{
   margin: 0;
   background-color: #515DEF;
-  background-image: url(/src/img/header-02/MaskGroup.png);
+  background-image: url(../../src/img/header-02/MaskGroup.png);
   background-position: top right;
   background-size: contain;
   background-repeat: no-repeat;
@@ -386,7 +386,7 @@ main.index img{
   margin-right: auto;
   padding-left: 16px;
   padding-right: 16px;
-  background-image: url(/src/img/header-03/ellipse.svg);
+  background-image: url(../../src/img/header-03/ellipse.svg);
   background-size: 200px;
   background-position: left top 100px;
   background-repeat: no-repeat;
@@ -1112,7 +1112,9 @@ main.index img{
 }
 
 .spa nav ul .more > a::after {
-  content: "url(img/header-06/arrow-down.svg)";
+  content: url("../../src/img/header-06/arrow-down.svg");
+  display: inline-block;
+  padding-left: 10px;
   font-size: 0.7em;
 }
 
