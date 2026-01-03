@@ -42,7 +42,7 @@
 
   --pink: #DB2A6B;
   --orange: #F38160;
-  --navy: #264065;
+  --blue: #264065;
   --red: #FA504D;
 }
 
@@ -127,6 +127,7 @@ main.index article a {
 
 main.index img{
   max-width: 80%;
+  display: inline;
 }
 
 /* ===== Header 01 – Business Agency ===== */
@@ -482,7 +483,6 @@ main.index img{
   grid-template-columns: repeat(2, 1fr);
   color: var(--gray-500);
   margin-top: 70px;
-  margin-left: 70px;
 }
 
 .coworkingSpace .hero__check {
@@ -504,6 +504,7 @@ main.index img{
   margin:0;
   max-width: 100%;
   padding: 50px;
+  gap: 50px;
 }
 
 .coworkingSpace .items article{
@@ -1057,7 +1058,7 @@ main.index img{
 .spa header a{
   padding: 0 14px;
   font: var(--text-small);
-  color: var(--navy);
+  color: var(--blue);
 }
 
 .spa header .bag{
@@ -1068,13 +1069,13 @@ main.index img{
 }
 
 .spa header .signIn{
-  color: var(--navy);
+  color: var(--blue);
   padding: 8px 28px;
   text-decoration: underline;
 }
 
 .spa header .signUp{
-  background-color: var(--navy);
+  background-color: var(--blue);
   color: white;
   padding: 14px 30px;
   border-radius: 24px;
@@ -1098,7 +1099,7 @@ main.index img{
   font-size: 54px;
   font-weight: 700;
   line-height: normal;
-  color: var(--navy);
+  color: var(--blue);
   margin-top: 45px;
   margin-bottom: 0;
 }
@@ -1128,7 +1129,7 @@ main.index img{
 }
 
 .spa .hero .buttons .book{
-  background-color: var(--navy);
+  background-color: var(--blue);
   color: white;
   padding: 14px 40px;
   border-radius: 24px;
@@ -1153,7 +1154,7 @@ main.index img{
 
 .spa .hero .buttons .watch{
   font: var(--text-small);
-  color: var(--navy);
+  color: var(--blue);
   padding: 0 20px;
 }
 
@@ -1186,7 +1187,7 @@ main.index img{
   font-family: var(--font-primary);
   font-size: 28px;
   font-weight: 500;
-  color: var(--navy);
+  color: var(--blue);
   margin: 0;
   padding: 10px 0 5px 0;
 }
@@ -1233,7 +1234,7 @@ main.index img{
   font: var(--text-small);
   font-weight: bold;
   font-style: normal;
-  color: var(--navy);
+  color: var(--blue);
 }
 
 /* ===== Header 07 – Architecture ===== */
